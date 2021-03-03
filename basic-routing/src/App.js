@@ -65,20 +65,22 @@ function newRecipe(props) {
           />
         </form>
 {/* add drop down for category list */}
-         <form>
-           <label htmlFor = 'foodCat'></label>
-          <input
-          maxLength= '10'
-          placeholder= 'Category'
-          id= 'foodCat'
-          name= "foodDropdown"
-          type= 'text'
-          />
-        </form> 
 
+          
+          <label htmlFor ='foodCat'>Category</label>
+  <select id='foodCat' name='category'>
+        <option value='1'>Breakfast</option>
+        <option value='2'>Lunch</option>
+        <option value='3'>Appetizer</option>
+        <option value='4'>Snack</option>
+        <option value='5'>Dinner</option>
+        <option value='6'>Dessert</option>
+          
+          
+  </select> 
+</div>
 
-
-  </div>
+  
 
 {/*  add functionality to 'Enter New Recipe' button! */}
   < button onClick={() => push ("/newRecipe")}>Enter New Recipe</button>
